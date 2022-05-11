@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>CamionesModelo</servlet-name>
+        <servlet-class>Modelo.CamionesModelo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CamionesServlet</servlet-name>
+        <servlet-class>Controlador.CamionesServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RutasServlet</servlet-name>
+        <servlet-class>Controlador.RutasServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Tipo_pagoServlet</servlet-name>
+        <servlet-class>Controlador.Tipo_pagoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CamionesModelo</servlet-name>
+        <url-pattern>/CamionesModelo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CamionesServlet</servlet-name>
+        <url-pattern>/CamionesServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RutasServlet</servlet-name>
+        <url-pattern>/RutasServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Tipo_pagoServlet</servlet-name>
+        <url-pattern>/Tipo_pagoServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
